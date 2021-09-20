@@ -104,17 +104,17 @@ class MaskUtil
                     && (
                         (
                             $x + 10 < $width
-                            && $array[$y][$x + 7] === 0
-                            && $array[$y][$x + 8] === 0
-                            && $array[$y][$x + 9] === 0
-                            && $array[$y][$x + 10] === 0
+                            && ($array[$y][$x + 7] ?? null) === 0
+                            && ($array[$y][$x + 8] ?? null) === 0
+                            && ($array[$y][$x + 9] ?? null) === 0
+                            && ($array[$y][$x + 10] ?? null) === 0
                         )
                         || (
                             $x - 4 >= 0
-                            && $array[$y][$x - 1] === 0
-                            && $array[$y][$x - 2] === 0
-                            && $array[$y][$x - 3] === 0
-                            && $array[$y][$x - 4] === 0
+                            && ($array[$y][$x - 1] ?? null) === 0
+                            && ($array[$y][$x - 2] ?? null) === 0
+                            && ($array[$y][$x - 3] ?? null) === 0
+                            && ($array[$y][$x - 4] ?? null) === 0
                         )
                     )
                 ) {
@@ -133,17 +133,17 @@ class MaskUtil
                     && (
                         (
                             $y + 10 < $height
-                            && $array[$y + 7][$x] === 0
-                            && $array[$y + 8][$x] === 0
-                            && $array[$y + 9][$x] === 0
-                            && $array[$y + 10][$x] === 0
+                            && ($array[$y + 7][$x] ?? null) === 0
+                            && ($array[$y + 8][$x] ?? null) === 0
+                            && ($array[$y + 9][$x] ?? null) === 0
+                            && ($array[$y + 10][$x] ?? null) === 0
                         )
                         || (
                             $y - 4 >= 0
-                            && $array[$y - 1][$x] === 0
-                            && $array[$y - 2][$x] === 0
-                            && $array[$y - 3][$x] === 0
-                            && $array[$y - 4][$x] === 0
+                            && ($array[$y - 1][$x] ?? null) === 0
+                            && ($array[$y - 2][$x] ?? null) === 0
+                            && ($array[$y - 3][$x] ?? null) === 0
+                            && ($array[$y - 4][$x] ?? null) === 0
                         )
                     )
                 ) {
