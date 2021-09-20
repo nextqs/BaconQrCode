@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 2.0.5 - 2020-07-14
+
+### Fixed
+
+- [#92](https://github.com/Bacon/BaconQrCode/issues/92) Error QrCode generate - PHP8 (Index invalid or out of range).
+
 ## 2.0.2 - 2020-07-30
 
 ### Changed

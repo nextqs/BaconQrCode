@@ -87,26 +87,26 @@ final class MaskUtil
             for ($x = 0; $x < $width; ++$x) {
                 if ($x + 6 < $width
                     && 1 === $array[$y][$x]
-                    && 0 === $array[$y][$x + 1]
-                    && 1 === $array[$y][$x + 2]
-                    && 1 === $array[$y][$x + 3]
-                    && 1 === $array[$y][$x + 4]
-                    && 0 === $array[$y][$x + 5]
-                    && 1 === $array[$y][$x + 6]
+                    && 0 === ($array[$y][$x + 1] ?? null)
+                    && 1 === ($array[$y][$x + 2] ?? null)
+                    && 1 === ($array[$y][$x + 3] ?? null)
+                    && 1 === ($array[$y][$x + 4] ?? null)
+                    && 0 === ($array[$y][$x + 5] ?? null)
+                    && 1 === ($array[$y][$x + 6] ?? null)
                     && (
                         (
                             $x + 10 < $width
-                            && 0 === $array[$y][$x + 7]
-                            && 0 === $array[$y][$x + 8]
-                            && 0 === $array[$y][$x + 9]
-                            && 0 === $array[$y][$x + 10]
+                            && 0 === ($array[$y][$x + 7] ?? null)
+                            && 0 === ($array[$y][$x + 8] ?? null)
+                            && 0 === ($array[$y][$x + 9] ?? null)
+                            && 0 === ($array[$y][$x + 10] ?? null)
                         )
                         || (
                             $x - 4 >= 0
-                            && 0 === $array[$y][$x - 1]
-                            && 0 === $array[$y][$x - 2]
-                            && 0 === $array[$y][$x - 3]
-                            && 0 === $array[$y][$x - 4]
+                            && 0 === ($array[$y][$x - 1] ?? null)
+                            && 0 === ($array[$y][$x - 2] ?? null)
+                            && 0 === ($array[$y][$x - 3] ?? null)
+                            && 0 === ($array[$y][$x - 4] ?? null)
                         )
                     )
                 ) {
@@ -115,26 +115,26 @@ final class MaskUtil
 
                 if ($y + 6 < $height
                     && 1 === $array[$y][$x]
-                    && 0 === $array[$y + 1][$x]
-                    && 1 === $array[$y + 2][$x]
-                    && 1 === $array[$y + 3][$x]
-                    && 1 === $array[$y + 4][$x]
-                    && 0 === $array[$y + 5][$x]
-                    && 1 === $array[$y + 6][$x]
+                    && 0 === ($array[$y + 1][$x] ?? null)
+                    && 1 === ($array[$y + 2][$x] ?? null)
+                    && 1 === ($array[$y + 3][$x] ?? null)
+                    && 1 === ($array[$y + 4][$x] ?? null)
+                    && 0 === ($array[$y + 5][$x] ?? null)
+                    && 1 === ($array[$y + 6][$x] ?? null)
                     && (
                         (
                             $y + 10 < $height
-                            && 0 === $array[$y + 7][$x]
-                            && 0 === $array[$y + 8][$x]
-                            && 0 === $array[$y + 9][$x]
-                            && 0 === $array[$y + 10][$x]
+                            && 0 === ($array[$y + 7][$x] ?? null)
+                            && 0 === ($array[$y + 8][$x] ?? null)
+                            && 0 === ($array[$y + 9][$x] ?? null)
+                            && 0 === ($array[$y + 10][$x] ?? null)
                         )
                         || (
                             $y - 4 >= 0
-                            && 0 === $array[$y - 1][$x]
-                            && 0 === $array[$y - 2][$x]
-                            && 0 === $array[$y - 3][$x]
-                            && 0 === $array[$y - 4][$x]
+                            && 0 === ($array[$y - 1][$x] ?? null)
+                            && 0 === ($array[$y - 2][$x] ?? null)
+                            && 0 === ($array[$y - 3][$x] ?? null)
+                            && 0 === ($array[$y - 4][$x] ?? null)
                         )
                     )
                 ) {
